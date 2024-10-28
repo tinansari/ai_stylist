@@ -113,10 +113,5 @@ ai_stylist/
 │   ├── package-lock.json     # Lockfile for frontend dependencies
 │   └── package.json          # Frontend dependencies and scripts
 │
-├── README.md                 # Project information
-└── package.json              # Root dependencies (if any)
+└── README.md                 # Project information
 
-## Acknowledgments
-
-- OpenAI for the GPT models.
-- React and Express for providing robust frameworks for building the app.
