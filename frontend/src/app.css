@@ -1,14 +1,113 @@
+/* Background color and page styling */
+body {
+    background-color: #D8A7B1; /* Rosy mauve pink color */
+    background-image: url('/Users/tinaansari/ai_stylist/frontend/public/lace-overlay.png'); /* Lace overlay image */
+    background-size: cover;
+    background-repeat: repeat;
+    background-blend-mode: overlay; /* Blend lace with pink background */
+    font-family: 'Lora', serif; /* Default font for the app */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main app container */
 .App {
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly translucent white */
+    padding: 40px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
-    font-family: Arial, sans-serif;
-    margin: 20px;
 }
 
+/* Title styling */
 h1 {
-    color: #333;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #4C3B47;
+    margin-bottom: 20px;
 }
 
-input, button {
-    padding: 8px;
-    margin: 8px;
+/* Subtitle styling */
+label {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #4C3B47;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Input and Button styling */
+input[type="text"] {
+    padding: 12px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    border: 1px solid #D1BDBD;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #F5F2F0;
+    background-color: #4C3B47;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+}
+
+button:hover {
+    background-color: #6D4F57;
+}
+
+/* Recommendation display styling */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #4C3B47;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #4C3B47;
+    font-family: 'Lora', serif;
+}
+
+/* Additional styles for recommendation view */
+
+/* Recommendation text styling for smaller font */
+.recommendation-text {
+    font-size: 1.2rem; /* Smaller font to fit longer recommendations */
+    color: #4C3B47;
+    font-family: 'Lora', serif;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* "Back" button styling */
+.back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #F5F2F0;
+    background-color: #4C3B47;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Lora', serif;
+}
+
+.back-button:hover {
+    background-color: #6D4F57;
 }

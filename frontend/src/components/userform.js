@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import getRecommendation from '../ai/recAPI';
+import './userform.css'; // Make sure you create and import a separate CSS file for specific styling if needed.
 
 function UserForm({ onRecommend }) {
     const [preferences, setPreferences] = useState('');
@@ -13,15 +14,19 @@ function UserForm({ onRecommend }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>Enter Style Preferences:</label>
-            <input 
-                type="text" 
-                value={preferences} 
-                onChange={(e) => setPreferences(e.target.value)} 
-                placeholder="e.g., casual, business, sporty"
-            />
-            <button type="submit">Get Recommendation</button>
+        <form onSubmit={handleSubmit} className="user-form">
+            <label>How do you want to dress today diva?</label>
+            <div className="input-container">
+                <input 
+                    type="text" 
+                    value={preferences} 
+                    onChange={(e) => setPreferences(e.target.value)} 
+                    placeholder="e.g., casual, business, sporty"
+                />
+            </div>
+            <div className="button-container">
+                <button type="submit">STYLE ME</button>
+            </div>
         </form>
     );
 }
